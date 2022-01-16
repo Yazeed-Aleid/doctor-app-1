@@ -17,7 +17,7 @@ export default function Signin() {
     };
     axios.post("/api/users/signIn", LoginUser).then((res) => {
       if (res.data !== "invalid email/password") {
-        nav("/doctor");
+        nav("/profile");
       } else {
         setErrorMessage(res.data);
       }

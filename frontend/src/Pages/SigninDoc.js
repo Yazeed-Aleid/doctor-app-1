@@ -22,7 +22,7 @@ export default function SigninDoc() {
       console.log(res);
 
         if (res.data!=="invalid email/password" ) {
-            nav("/doctor");
+            nav("/doctorProfile");
           } else {
             setErrorMessage(res.data);
             

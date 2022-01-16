@@ -17,7 +17,7 @@ function SignUpDoctor() {
       .then((res) => {
         console.log(res.data);
         if (res.data === "done") {
-          navigate("/signin");
+          navigate("/SigninDoc");
         } else {
           setErrorMessage(res.data);
         }
@@ -69,3 +69,7 @@ function SignUpDoctor() {
 }
 
 export default SignUpDoctor;
+
+
+
+
